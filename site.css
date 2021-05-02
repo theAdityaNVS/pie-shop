@@ -115,3 +115,12 @@ article {
   border: solid 1px #f6aeae;
   border-radius: 3px;
 }
+
+.pie button:hover {
+  opacity: 0.9;
+}
+
+.pie button:active {
+  opacity: 0.7;
+  border: solid 1px #2F4858;
+}
