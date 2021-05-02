@@ -34,17 +34,16 @@
         font-weight: 600;
       }
 
-      input[type="reset"] {
-        background: transparent;
-        border: 0;
-        text-decoration: underline;
-        cursor: pointer;
-      }
-
-      input[type="submit"] {
+      input[type="submit"], input[type="reset"] {
         border: solid 1px #999;
         border-radius: 3px;
         padding: 10px;
+        background: #23aaa1ec;
+      }
+
+      input[type="reset"] {
+          cursor: pointer;
+          background: rgb(211, 210, 210);
       }
     </style>
   </head>
@@ -64,7 +63,6 @@
       <aside><img src="images/logo.png" alt="Bethany's Pie Shop" /></aside>
 
       <article>
-        <!-- ADD CONTENT HERE -->
         <h1>Order</h1>
 
         <div class="pie">
@@ -76,7 +74,7 @@
           <p class="desc"></p>
         </div>
 
-        <form action="http://localhost:7071/api/post" method="POST">
+        <form action="index.html" method="POST">
           <input type="hidden" id="pie-order" name="pie-order">
           <input type="hidden" id="location" name="location">
 
